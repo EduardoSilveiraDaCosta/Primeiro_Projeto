@@ -16,7 +16,7 @@
     <title>Museu Nacional</title>
 </head>
 <body>
-    <div id="container">
+    <div id="container"> <!-- INÍCIO container -->
         
         <header><!-- INÍCIO CABECALHO -->
 
@@ -24,7 +24,7 @@
                 <h1><a href="">MuseuNacional</a></h1>
             </div>
 
-            <nav><!-- INÍCIO DA NAV -->
+            <nav><!-- INÍCIO NAV -->
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">EXPOSIÇÃO</a></li>
@@ -34,12 +34,69 @@
                     <li><a href="">FOTOS</a></li>
                     <li><a href="">CONTATO</a></li>
                 </ul>
-            </nav><!-- FIM DA NAV -->
+            </nav><!-- FIM NAV -->
 
         </header><!-- FIM CABECALHO -->
 
-        
+        <dvi id="principal"> <!-- INÍCIO principal -->
 
-    </div>
+            <div id="conteudo"> <!-- INÍCIO conteudo -->
+               
+                <section id="capa"><!-- INÍCIO CAPA -->
+                    <img src="img/museu.png" alt="">
+                </section><!-- FIM CAPA -->
+
+            </div><!-- FIM CONTEUDO -->
+
+            <aside><!-- INÍCIO ASIDE -->
+                <section id="depoimento"><!-- INÍCIO DEPOIMENTO -->
+                    <img src="img/depoimento.png" alt="">
+                </section><!-- FIM DEPOIMENTO -->
+
+                <section id="visita"><!-- INÍCIO VISITA -->
+                    <h4>Faça sua visita</h4>
+                    <form action="">
+                        <fieldset>
+                            <legend> Selecione uma data </legend>
+
+                            <div class="input-box">
+                                <label for="data">Data</label>
+                                <input class="campo" type="text" id="data" value="dd/mm/aaaa">
+                            </div>
+                            
+                            <div class="input-box">
+                            <label class="qtn" for="qtd" >Quantidade de Pessoas</label>
+                            <input class="campo" type="text" id="qtd" value="1">
+                            </div>
+
+                        </fieldset>
+
+                        <input class="botao" type="submit" value="Verificar disponibilidade">
+                    </form>
+                </section><!-- FIM VISITA -->
+
+                <section id="galeria"><!-- INÍCIO GALERIA -->
+                    <h4>Galeria de fotos</h4>
+
+                    <a href="">
+                        <img src="/img/imagem1.jpg" height="93" width="93" alt="">
+                    </a>
+                    <a href="">
+                        <img src="/img/imagem2.jpg" height="93" width="93" alt="">
+                    </a>
+                    <a href="">
+                        <img src="/img/imagem3.jpg" height="93" width="93" alt="">
+                    </a>
+                    <a href="">
+                        <img src="/img/imagem4.jpg" height="93" width="93" alt="">
+                    </a>
+
+
+                </section><!-- FIM GALERIA -->
+            </aside><!-- FIM ASIDE -->
+             
+        </dvi><!-- FIM PRINCIPAL -->
+
+    </div><!-- FIM CONTAINER -->
 </body>
 </html>
