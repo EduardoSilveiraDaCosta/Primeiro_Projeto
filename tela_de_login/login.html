@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    
+    <!--Normalize CSS-->
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+
+    <!--Estilo customizado-->
+    <link rel="stylesheet" type="text/css" href="/tela_de_login/estilo_login.css">
+
+    <!--[if lt IE 9]>
+	    <script src="<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js" integrity="sha512-RCtZMoZSQ5csGk1zBPGImR8OY+NJfe0IsaFrDD649yYrSBgCf3kYiP79AfWT9/idKbpWYteQmswChxbXC7YHig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>"></script>
+    <![endif]-->
+
+    <title>Faça seu login</title>
+
+</head>
+
+<body>
+    <form action="">
+        <h3>login</h3>
+        <input id="email" type="text" nome="E-mail" placeholder="Seu e-mail..."/>
+        <input id="password" type="password" nome="senha" placeholder="Sua senha..."/>
+        <input type="submit" name="acao" value="Enviar">
+    </form>
+
+    <script>
+        var email = document.getElementById('email');
+        var password = document.getElementById('password');
+
+        email.addEventListener('focus', ()=>{
+             email.style.borderColor = "#5f7c8a";
+        });
+        email.addEventListener('blur', ()=>{
+             email.style.borderColor = "#5f7c8a";
+        });
+        password.addEventListener('focus', ()=>{
+             email.style.borderColor = "#5f7c8a";
+        });
+        password.addEventListener('blur', ()=>{
+             email.style.borderColor = "#5f7c8a";
+        });
+    </script>
+
+</body>
+</html>
